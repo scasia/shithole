@@ -37,15 +37,19 @@
             padding: 20px;
             text-align: center;
         }
-        .bmp-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 20px;
-        }
-        .bmp-image {
+        .stacked-container {
             display: inline-block;
+            vertical-align: top;
+            margin-right: 30px;
+        }
+        .stacked-container .bmp-image {
+            margin: 5px 0;
+        }
+        .horizontal-container {
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
         }
         .bmp-image img {
             width: 88px;
@@ -76,19 +80,24 @@
         <h2>hi whores</h2>
         <p>so basically i wanted to make a website bc i wanted to like host all my stuffs here and like softwares i cant get anywhere so heres my new website half built by chatgpt and half by me ;3</p>
 
-        <div class="bmp-container">
-            <div class="bmp-image"><img src="Pics/pride.gif" alt="Pride"></div>
-            <div class="bmp-image"><img src="Pics/pisihate.png" alt="PS I Hate"></div>
-            <div class="bmp-image"><img src="Pics/getlinux.gif" alt="Get Linux"></div>
-            <div class="bmp-image"><img src="Pics/macuser.png" alt="Mac User"></div>
-            <div class="bmp-image"><img src="Pics/nowin.gif" alt="No Win"></div>
-            <div class="bmp-image"><img src="Pics/weird.png" alt="Weird People"></div>
-            <div class="bmp-image"><img src="Pics/vampires.png" alt="Protected by Vampires"></div>
-            <div class="bmp-image"><img src="Pics/exploder.gif" alt="Internet Explorer"></div>
-            <div class="bmp-image"><img src="Pics/mlodzirazem.png" alt="Młodzi Razem"></div>
-            <div class="bmp-image"><img src="Pics/satan.gif" alt="Hail Satan"></div>
-            <div class="bmp-image"><img src="Pics/trans.gif" alt="Transgender"></div>
-            <div class="bmp-image"><img src="Pics/deerzone.gif" alt="DeerZone"></div>
+        <div style="display: flex; justify-content: center; align-items: flex-start; gap: 40px;">
+            <div class="stacked-container">
+                <div class="bmp-image"><img src="Pics/pride.gif" alt="Pride"></div>
+                <div class="bmp-image"><img src="Pics/pisihate.png" alt="PS I Hate"></div>
+                <div class="bmp-image"><img src="Pics/getlinux.gif" alt="Get Linux"></div>
+                <div class="bmp-image"><img src="Pics/macuser.png" alt="Mac User"></div>
+                <div class="bmp-image"><img src="Pics/nowin.gif" alt="No Win"></div>
+            </div>
+
+            <div class="horizontal-container">
+                <div class="bmp-image"><img src="Pics/weird.png" alt="Weird People"></div>
+                <div class="bmp-image"><img src="Pics/vampires.png" alt="Protected by Vampires"></div>
+                <div class="bmp-image"><img src="Pics/exploder.gif" alt="Internet Explorer"></div>
+                <div class="bmp-image"><img src="Pics/mlodzirazem.png" alt="Młodzi Razem"></div>
+                <div class="bmp-image"><img src="Pics/satan.gif" alt="Hail Satan"></div>
+                <div class="bmp-image"><img src="Pics/trans.gif" alt="Transgender"></div>
+                <div class="bmp-image"><img src="Pics/deerzone.gif" alt="DeerZone"></div>
+            </div>
         </div>
     </div>
     <div id="footer">
